@@ -1,0 +1,46 @@
+ """
+    print 'HEADER:'
+    typ, msg_data = c.fetch('5', '(BODY.PEEK[HEADER])')
+    for response_part in msg_data:
+        if isinstance(response_part, tuple):
+            print response_part[1]   
+    print 'BODY TEXT:' """
+
+    """
+    for response_part in msg_data:
+        if isinstance(response_part, tuple):
+            print response_part[1]"""
+
+    """
+    if mail.get_content_maintype() == 'multipart':
+        for payload in mail.get_payload():
+            #if payload.get_content_maintype() == 'text':
+                print "\nyes"
+                print payload.get_payload().get_payload()
+    else:
+            print "\nno"
+            print mail.get_payload()"""
+
+    """
+    if mail.get_content_maintype() == 'multipart':
+        for part in mail.walk():
+            # multipart are just containers, so we skip them
+            if part.get_content_maintype() == 'multipart':
+                continue
+
+            # is this part an attachment ?
+            if part.get('Content-Disposition') is None:
+                continue
+            
+            # if there is no filename, we create one with a counter to avoid duplicates
+            filename = part.get_filename()
+            att_path = os.path.join(detach_dir, filename)
+
+            print "payload in the memory\n", part.get_payload(decode=True)
+            print "\n"
+
+            if not os.path.isfile(att_path):
+                fp = open(filename, 'wb')
+                fp.write(part.get_payload(decode=True))
+                fp.close()
+            calculate_hashfile(filename)"""

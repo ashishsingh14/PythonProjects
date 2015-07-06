@@ -1,0 +1,18 @@
+
+from Tkinter import *;
+
+def create():
+    root = Tk()
+    S = Scrollbar(root)
+    T = Text(root)
+    S.pack(side=RIGHT, fill=Y)
+    T.pack(side=LEFT, fill=Y)
+    S.config(command=T.yview)
+    T.config(yscrollcommand=S.set)
+    T.insert(END, "Just a text Widget\nin two lines\n")
+    B = Tkinter.Button(top, text ="Hello", command = sendtoserver)
+    mainloop()
+    
+
+if __name__ == '__main__':
+    create()

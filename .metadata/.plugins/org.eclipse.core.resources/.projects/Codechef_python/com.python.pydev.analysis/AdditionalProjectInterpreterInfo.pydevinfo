@@ -1,0 +1,19 @@
+-- VERSION_4
+-- START DISKCACHE
+/Users/ashissi3/Documents/workspaceforpython/.metadata/.plugins/org.eclipse.core.resources/.projects/Codechef_python/com.python.pydev.analysis/v2_indexcache
+doublestring|1423781682000|/Users/ashissi3/Documents/workspaceforpython/Codechef_python/src/doublestring.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=doublestring
+-- END DICTIONARY
+-- START TREE 1
+4
+che|1|checkprime!10@
+dou|1|doublestring!10@
+pal|1|palindromenumber!10@
+pri|1|primepalindrome!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,5 @@
+from tkinter import *;
+
+def create():
+    tk = Tk()
+    canvas = Canvas(tk, 1000, 1000)

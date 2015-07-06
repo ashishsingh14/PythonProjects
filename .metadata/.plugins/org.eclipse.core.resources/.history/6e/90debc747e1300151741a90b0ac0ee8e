@@ -1,0 +1,17 @@
+import sys,os
+from twisted.protocols.portforward import ProxyFactory
+from twisted.protocols.portforward import ProxyClientFactory
+from twisted.protocols.portforward import ProxyClient
+from twisted.protocols.portforward import ProxyServer
+from twisted.internet import reactor
+
+class PS(ProxyServer):
+    def dataReceived(self, data):
+        print "PS->dataReceived(%s)" %repr(data)
+        ProxyServer.dataReceived(self, data)
+
+       
+pfactory = ProxyFactory('192.168.1.1',993)
+pfactory.protocol = PS
+reactor.listenTCP(993, pfactory)
+reactor.run()

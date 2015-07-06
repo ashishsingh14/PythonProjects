@@ -1,0 +1,13 @@
+package twitter.getrequest;
+import twitter4j.*;
+
+
+public class GetRequest {
+	
+	public static void main(String [] args)
+	{
+		System.out.println("Ashish\n");
+		ConfigurationBuilder b = new ConfigurationBuilder();
+	}
+
+}

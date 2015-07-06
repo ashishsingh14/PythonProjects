@@ -1,0 +1,8 @@
+import Tkinter
+from tkinter import *;
+
+def create():
+    tk = Tk()
+    canvas = Canvas(tk, 1000, 1000)
+    canvas.pack()
+    canvas.create_text(200, 200, text="Example Text")

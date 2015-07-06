@@ -1,0 +1,22 @@
+-- VERSION_4
+-- START DISKCACHE
+/Users/ashissi3/Documents/workspaceforpython/.metadata/.plugins/org.eclipse.core.resources/.projects/imapproxy1.py/com.python.pydev.analysis/v2_indexcache
+testing1.__init__|1434385345000|/Users/ashissi3/Documents/workspaceforpython/imapproxy1.py/src/testing1/__init__.py
+testing1.proxy1|1434387300000|/Users/ashissi3/Documents/workspaceforpython/imapproxy1.py/src/testing1/proxy1.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+2=PS
+1=testing1.proxy1
+-- END DICTIONARY
+-- START TREE 1
+3
+PS|1|PS!9@
+mai|1|main!10@
+pfa|0|
+-- END TREE
+-- START TREE 2
+2
+dat|1|dataReceived!2&10@
+pfa|0|
+-- END TREE
